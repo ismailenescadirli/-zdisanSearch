@@ -41,7 +41,7 @@ public class ProductsAdapter extends ArrayAdapter<Products> {
         String link = productMain.getLink();
 
         productTextView.setText(productName);
-        numberOfStock.setText(stock);
+        numberOfStock.setText("Stock : "+ stock);
         productMean.setText(productDescription);
 
         relativeLayout.setOnClickListener(view -> {
