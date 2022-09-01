@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ProductsDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="347dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/urunId"
+        android:layout_width="121dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="68dp"
+        android:text="Ürün Adı"
+        android:textColor="#3F51B5"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/stok2Id"
+        android:layout_width="58dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="92dp"
+        android:text="Stok"
+        android:textColor="#3F51B5"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urunId" />
+
+    <TextView
+        android:id="@+id/MınPaketId"
+        android:layout_width="211dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:text="Min. Paketleme Adedi	"
+        android:textColor="#3F51B5"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stok2Id" />
+
+    <TextView
+        android:id="@+id/MınSıparısId"
+        android:layout_width="153dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:text="Min. Sipariş Adedi"
+        android:textColor="#3F51B5"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MınPaketId" />
+
+    <TextView
+        android:id="@+id/productNameId"
+        android:layout_width="251dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="75dp"
+        android:text="-"
+        android:textColor="#000000"
+        android:textIsSelectable="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/urunId"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/productDescriptionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text="-"
+        android:textColor="#040404"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/urunId"
+        app:layout_constraintTop_toBottomOf="@+id/urunId" />
+
+    <TextView
+        android:id="@+id/StockId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="100dp"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/stok2Id"
+        app:layout_constraintTop_toBottomOf="@+id/urunId" />
+
+    <TextView
+        android:id="@+id/minPacketId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="132dp"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/MınPaketId"
+        app:layout_constraintTop_toBottomOf="@+id/productNameId" />
+
+    <TextView
+        android:id="@+id/minOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/MınSıparısId"
+        app:layout_constraintTop_toBottomOf="@+id/minPacketId" />
+
+    <ImageView
+        android:id="@+id/pdfId"
+        android:layout_width="44dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="333dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/urunId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pdf_icon"
+        tools:srcCompat="@drawable/pdf_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
